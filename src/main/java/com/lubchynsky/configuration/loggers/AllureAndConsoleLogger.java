@@ -1,4 +1,4 @@
-package com.lubchynsky.loggers;
+package com.lubchynsky.configuration.loggers;
 
 import lombok.extern.slf4j.Slf4j;
 
