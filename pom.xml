@@ -20,6 +20,7 @@
         <log4j2.version>2.20.0</log4j2.version>
         <lombok.version>1.18.28</lombok.version>
         <hamcrest.version>2.2</hamcrest.version>
+        <selenide.version>6.16.1</selenide.version>
     </properties>
 
     <dependencies>
@@ -55,6 +56,12 @@
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-testng</artifactId>
             <version>${allure.testng.version}</version>
+        </dependency>
+        <!-- Selenide -->
+        <dependency>
+            <groupId>com.codeborne</groupId>
+            <artifactId>selenide</artifactId>
+            <version>${selenide.version}</version>
         </dependency>
         <!-- TestNG -->
         <dependency>
