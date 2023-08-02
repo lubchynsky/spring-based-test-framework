@@ -1,4 +1,4 @@
-package com.lubchynsky.components;
+package com.lubchynsky.services;
 
 import org.springframework.stereotype.Component;
 

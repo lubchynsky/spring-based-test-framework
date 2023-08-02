@@ -1,6 +1,6 @@
 package com.lubchynsky.basic;
 
-import com.lubchynsky.components.HelloWorldService;
+import com.lubchynsky.services.HelloWorldService;
 import com.lubchynsky.configuration.test.BaseTest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.testng.annotations.Test;
