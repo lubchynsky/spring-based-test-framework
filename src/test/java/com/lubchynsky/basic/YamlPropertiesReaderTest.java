@@ -10,6 +10,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.notNullValue;
 
+/**
+ * This test class uses Yaml files reader
+ */
 public class YamlPropertiesReaderTest extends BaseTest {
     @Autowired
     private YamlPropertiesReader propertiesReader;

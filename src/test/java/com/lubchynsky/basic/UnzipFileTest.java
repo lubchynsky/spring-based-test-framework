@@ -11,6 +11,9 @@ import static com.lubchynsky.services.ZippedFilesReader.unzipFile;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.hasSize;
 
+/**
+ * This test uses file unzipping functionality
+ */
 public class UnzipFileTest {
 
     @Test
