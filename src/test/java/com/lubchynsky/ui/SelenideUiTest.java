@@ -1,6 +1,6 @@
-package com.lubchynsky.basic;
+package com.lubchynsky.ui;
 
-import com.lubchynsky.configuration.test.BaseTest;
+import com.lubchynsky.ui.BaseUiTest;
 import com.lubchynsky.ui.SelenideHomePage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.testng.annotations.Test;
@@ -12,7 +12,7 @@ import static org.hamcrest.Matchers.containsString;
 /**
  * This test class uses Selenide-base page object
  */
-public class SelenideUiTest extends BaseTest {
+public class SelenideUiTest extends BaseUiTest {
 
     @Autowired
     private SelenideHomePage selenideHomePage;
@@ -24,5 +24,4 @@ public class SelenideUiTest extends BaseTest {
         assertThat(releasedVersion, containsString("Released Selenide"));
         logInfo(releasedVersion);
     }
-
 }

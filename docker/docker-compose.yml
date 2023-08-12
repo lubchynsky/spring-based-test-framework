@@ -1,4 +1,5 @@
-version: "3"
+version: "3.9"
+name: selenium-grid
 
 services:
   selenide-hub:
@@ -20,7 +21,7 @@ services:
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
       - SE_NODE_MAX_INSTANCES=2
       - SE_NODE_MAX_SESSIONS=2
-      - SE_NODE_SESSION_TIMEOUT=10
+      - SE_NODE_SESSION_TIMEOUT=60
 
   edge:
     image: selenium/node-edge:4.11
@@ -33,7 +34,7 @@ services:
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
       - SE_NODE_MAX_INSTANCES=2
       - SE_NODE_MAX_SESSIONS=2
-      - SE_NODE_SESSION_TIMEOUT=10
+      - SE_NODE_SESSION_TIMEOUT=60
 
   firefox:
     image: selenium/node-firefox:4.11
@@ -46,4 +47,4 @@ services:
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
       - SE_NODE_MAX_INSTANCES=2
       - SE_NODE_MAX_SESSIONS=2
-      - SE_NODE_SESSION_TIMEOUT=10
+      - SE_NODE_SESSION_TIMEOUT=60
