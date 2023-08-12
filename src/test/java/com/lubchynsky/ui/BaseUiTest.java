@@ -12,13 +12,26 @@ public class BaseUiTest extends BaseTest {
 
     @BeforeClass
     public void setupSelenide() {
+        setupRemoteDriverIfPresent();
+        setupBrowser();
+    }
+
+    private void setupRemoteDriverIfPresent() {
         /*
          * By default, selenide will start driver locally.
          * To start it in selenium grid, "-Dremote" option should be used or "remote" profile selected
          * */
         if (System.getProperty("remote") != null) {
             Configuration.remote = selenideConfiguration.getRemoteHubUrl();
-            Configuration.browser = selenideConfiguration.getBrowser();
         }
+    }
+
+    private void setupBrowser() {
+        /*
+         * By default, selenide will start test on chrome browser.
+         * To select diff browser, -Dbrowser=<type> option should be used or maven profile selected.
+         * Browser types: firefox, chrome or edge
+         * */
+        Configuration.browser = System.getProperty("browser", "chrome");
     }
 }

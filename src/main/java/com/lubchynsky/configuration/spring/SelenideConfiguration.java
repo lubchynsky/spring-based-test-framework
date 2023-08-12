@@ -12,6 +12,4 @@ public class SelenideConfiguration {
 
     @Value("${remote.hub.url}")
     private String remoteHubUrl;
-    @Value("${browser}")
-    private String browser;
 }
