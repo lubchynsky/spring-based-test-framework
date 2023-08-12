@@ -14,7 +14,7 @@ public class BaseUiTest extends BaseTest {
     public void setupSelenide() {
         /*
          * By default, selenide will start driver locally.
-         * To start it selenium grid, "-Dremote" option should be used
+         * To start it selenium grid, "-Dremote" option should be used or "remote" profile selected
          * */
         if (System.getProperty("remote") != null) {
             Configuration.remote = selenideConfiguration.getRemoteHubUrl();

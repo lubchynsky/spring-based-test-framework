@@ -1,7 +1,5 @@
 package com.lubchynsky.ui;
 
-import com.lubchynsky.ui.BaseUiTest;
-import com.lubchynsky.ui.SelenideHomePage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.testng.annotations.Test;
 
