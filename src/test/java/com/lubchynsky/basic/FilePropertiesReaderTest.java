@@ -19,7 +19,7 @@ public class FilePropertiesReaderTest extends BaseTest {
 
     @Test
     public void springContextTest() {
-        assertThat(propertiesReader.getHostUrl(), is(notNullValue()));
-        logInfo(propertiesReader.getHostUrl());
+        assertThat(propertiesReader.getUiHostUrl(), is(notNullValue()));
+        logInfo(propertiesReader.getUiHostUrl());
     }
 }

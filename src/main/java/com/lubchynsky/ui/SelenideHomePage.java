@@ -18,7 +18,7 @@ public class SelenideHomePage {
     private PropertiesReader propertiesReader;
 
     public SelenideHomePage openPage() {
-        Selenide.open(propertiesReader.getHostUrl());
+        Selenide.open(propertiesReader.getUiHostUrl());
         return this;
     }
 
